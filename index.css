@@ -322,3 +322,52 @@ footer a:hover {
         text-align: left;
     }
 }
+
+#search button#
+
+.ticket-search {
+  max-width: 450px;
+  margin: 40px auto;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.ticket-search label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-box button:hover {
+  background: #005fcc;
+}
+
+.helper {
+  margin-top: 6px;
+  color: #777;
+  font-size: 13px;
+}
