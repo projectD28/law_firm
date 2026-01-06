@@ -200,9 +200,9 @@ section {
 /* Team */
 .team-card {
     text-align: center;
-    padding: -0.5rem 0rem;
-    border: 0px solid #636363;
-    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 3px solid #636363;
+    border-radius: 15px;
     transition: all 0.2s ease;
     height: 100%;
 }
@@ -216,9 +216,9 @@ section {
 .team-img {
     width: 250px;
     height: 340px;
-    border-radius: 50%;
+    border-radius: 5%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border: 3px solid var(--color-gold);
 }
 
@@ -375,4 +375,21 @@ footer a:hover {
   margin-top: 6px;
   color: #777;
   font-size: 13px;
+}
+
+#google_translate_element {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+.goog-te-gadget select {
+  font-size: 12px !important;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
 }
