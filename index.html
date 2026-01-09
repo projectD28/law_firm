@@ -127,7 +127,7 @@
                         Assisting clients with company establishment, corporate actions, contracts, M&amp;A,
                         and day‑to‑day business legal needs.
                     </p>
-                    <a href="#" class="news-link">Read more</a>
+                    <a   onclick="showModal('corporate')" class="news-link">Read more</a>
                 </div>
             </div>
 
@@ -139,7 +139,7 @@
                         Representing clients before courts and arbitral tribunals, handling civil, commercial,
                         and administrative disputes.
                     </p>
-                    <a href="#" class="news-link">Read more</a>
+                    <a onclick="showModal('Litigation')" class="news-link">Read more</a>
                 </div>
             </div>
 
@@ -505,6 +505,14 @@
     </div>
 </footer>
 
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <h3 id="modalTitle"></h3>
+    <div id="modalContent"></div>
+    <button onclick="closeModal()" id="buttonModal">Tutup</button>
+  </div>
+</div>
+
 <!-- Bootstrap JS (CDN) -->
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -521,5 +529,6 @@ function googleTranslateElementInit() {
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
