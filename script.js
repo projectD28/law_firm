@@ -190,3 +190,21 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
+document.addEventListener("scroll", function () {
+  const waBtn = document.querySelector(".floating-wa");
+  const footer = document.querySelector("footer");
+
+  if (!waBtn || !footer) return;
+
+  const footerTop = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (footerTop <= windowHeight - 24) {
+    waBtn.classList.add("stop");
+    waBtn.style.bottom = `${windowHeight - footerTop + 24}px`;
+  } else {
+    waBtn.classList.remove("stop");
+    waBtn.style.bottom = "24px";
+  }
+});

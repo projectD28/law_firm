@@ -1,12 +1,14 @@
 :root {
-  --primary: #555;          /* abu gelap */
-  --primary-light: #f0f0f0; /* abu sangat muda */
-  --border: #dcdcdc;        /* abu medium */
-  --text: #222;             /* hitam lembut */
-  --muted: #777;            /* abu sedang */
-  --bg: #f5f5f5;            /* abu muda */
-  --shadow: #636363;	    /* abu tua */
-  --radius: 6px;
+    --primary: #555;
+    --primary-light: #f0f0f0;
+    --border: #dcdcdc;
+    --text: #222;
+    --muted: #777;
+    --bg: #f5f5f5;
+    --shadow: #636363;
+    --radius: 6px;
+    --color-navy: #222a45;
+    --color-light: #f9f9f9;
 }
 
 * {
@@ -14,14 +16,14 @@
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 70px;
     font-family: 'Lexend', sans-serif;
-    color: var(--color-text);
+    color: var(--text);
     background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'lexend', sans-serif;
 }
 
 a {
@@ -50,7 +52,7 @@ a {
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--color-gold) !important;
+    color: var(--color-muted) !important;
 }
 
 /* Hero */
@@ -74,13 +76,14 @@ a {
 }
 
 .btn-gold {
-    background-color: var(--color-gold);
-    color: #ffffff;
-    border-radius: 0;
-    padding: 0.7rem 1.8rem;
+    background-color: var(--color-muted);
+    color: #222;
+    border-radius: 20px;
+    padding: 0.7rem 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
+    border: solid;
 }
 
 .btn-gold:hover {
@@ -89,7 +92,7 @@ a {
 }
 
 .hero-badge {
-    border-left: 3px solid var(--color-gold);
+    border-left: 3px solid var(--color-muted);
     padding-left: 1rem;
     margin-top: 1.5rem;
     font-size: 0.9rem;
@@ -106,7 +109,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9rem;
-    color: var(--color-gold);
+    color: var(--color-muted);
     font-weight: 500;
 }
 
@@ -118,7 +121,7 @@ section {
 .section-divider {
     width: 60px;
     height: 3px;
-    background-color: var(--color-gold);
+    background-color: var(--color-muted);
     margin-bottom: 2rem;
 }
 
@@ -133,7 +136,7 @@ section {
 }
 
 .stat-box {
-    border-left: 3px solid var(--color-gold);
+    border-left: 3px solid var(--color-muted);
     padding-left: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -141,7 +144,7 @@ section {
 .stat-number {
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--color-navy);
+    color: var(--color-text);
 }
 
 /* Services */
@@ -155,14 +158,14 @@ section {
 }
 
 .service-card:hover {
-    border-color: var(--color-gold);
+    border-color: var(--color-muted);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
     transform: translateY(-4px);
 }
 
 .service-icon {
     font-size: 2rem;
-    color: var(--color-gold);
+    color: var(--color-muted);
     margin-bottom: 1rem;
 }
 
@@ -178,6 +181,30 @@ section {
     text-align: justify;
 }
 
+/* Retainer Service */
+.retainer-service:hover {
+    border-color: var(--color-muted);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+    transform: translateY(-4px);
+}
+
+.retainer-service {
+    border: 5px solid #7d7d7d;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease;
+    height: 100%;
+    width: auto;
+}
+
+.retainer-text-a {
+    border: 5px solid #7d7d7d;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+    padding: 0.5rem 2.5rem;
+    margin: 0 auto;
+}
+
 /* Why choose us */
 .why-box {
     display: flex;
@@ -186,7 +213,7 @@ section {
 }
 
 .why-icon {
-    color: var(--color-gold);
+    color: var(--color-muted);
     font-size: 1.8rem;
 }
 
@@ -210,7 +237,7 @@ section {
 }
 
 .team-card:hover {
-    border-color: var(--color-gold);
+    border-color: var(--color-muted);
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
@@ -221,7 +248,7 @@ section {
     border-radius: 5%;
     object-fit: cover;
     margin-bottom: 0.5rem;
-    border: 3px solid var(--color-gold);
+    border: 3px solid var(--color-muted);
 }
 
 .team-name {
@@ -266,7 +293,7 @@ section {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-gold);
+    color: var(--color-muted);
     cursor: pointer;
 }
 
@@ -276,58 +303,138 @@ section {
 }
 
 /* Contact */
-.contact-section {
-    background-color: #ffffff;
-}
-
-.contact-info-item {
+.contact-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 16px;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
-.contact-icon {
-    font-size: 1.5rem;
-    color: var(--color-gold);
+.whatsapp-btn,
+.email-btn,
+.gmail-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.map-wrapper {
-    border: 1px solid #eeeeee;
-    min-height: 260px;
+.whatsapp-btn {
+    background: #25D366;
+    color: #fff;
 }
 
-/* Footer */
-footer {
-    background-color: var(--color-navy);
-    color: #bbbbbb;
-    padding: 30px 0;
-    font-size: 0.9rem;
+.email-btn {
+    background: #1f2a44;
+    color: #fff;
 }
 
-footer a {
-    color: #e0e0e0;
+.gmail-btn {
+    background: #e5e7eb;
+    color: #111827;
 }
 
-footer a:hover {
-    color: var(--color-gold);
+/* footer */
+.footer {
+    background-color: #1f2a44;
+    color: #e5e7eb;
+    padding: 0.5rem 2rem;
+    font-size: 0.95rem;
 }
 
-/* Responsive kecil */
-@media (max-width: 767.98px) {
-    .hero {
-        text-align: center;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.footer-text {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    text-decoration: underline;
+}
+
+/* KIRI */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    max-width: 550px;
+}
+
+/* ITEM */
+.footer-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.footer-item i {
+    font-size: 1rem;
+    margin-top: 0rem;
+    opacity: 1.8;
+}
+
+/* KANAN */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+    text-align: right;
+}
+
+/* LINK ATAS */
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
     }
-    .hero-title {
-        font-size: 2.2rem;
-    }
-    .hero-subtitle {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .hero-badge {
-        margin-left: auto;
-        margin-right: auto;
+
+    .footer-right {
+        align-items: flex-start;
         text-align: left;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
 
@@ -337,27 +444,7 @@ footer a:hover {
   font-size: 13px;
 }
 
-#google_translate_element {
-  transform: scale(0.75);
-  transform-origin: right center;
-}
-
-.goog-te-combo {
-  font-size: 12px !important;
-  padding: 3px 6px !important;
-}
-
-.goog-logo-link {
-  display: none !important;
-}
-
-.goog-te-gadget {
-  color: transparent !important;
-}
-
-
 /* modal */
-
 .modal {
   position: fixed;
   inset: 0;
@@ -421,7 +508,37 @@ footer a:hover {
     cursor: pointer;
 }
 
+#buttonModal:hover {
+    background-color: var(--color-navy);
+    border-color: var(--color-primary);
+    border: 2px solid #000000
+}
+
 .modal-box > .modal-header {
   display: flex;
   justify-content: space-between;
+}
+
+/* floating whatsapp */
+.floating-wa {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 45px;
+    height: 45px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 999;
+    transition: bottom 0.2s ease;
+}
+
+/* posisi saat sudah menyentuh footer */
+.floating-wa.stop {
+    position: absolute;
 }
