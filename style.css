@@ -298,7 +298,7 @@ img {
   border-radius: 22px;
   padding: 3.5rem 2.5rem;
   transform: none;
-
+  backface-visibility: hidden;
   background: linear-gradient(
     180deg,
     rgba(255,255,255,0.06),
@@ -320,13 +320,128 @@ img {
   gap: 1.8rem;
 }
 
-.panel {
-  backface-visibility: hidden;
+.panel-cta {
+  margin-top: auto;
+  align-self: flex-start;
+
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+
+  font-size: .95rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: rgba(255,255,255,.85);
+
+  transition:
+    color .3s ease,
+    gap .3s ease;
+}
+
+/* ==============================
+   MODAL
+=============================== */
+.panel-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease;
+}
+
+.panel-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.panel-modal-backdrop {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(4px);
+}
+
+.panel-modal-card {
+  position: relative;
+  z-index: 1;
+
+  width: min(560px, calc(100% - 3rem));
+  padding: 3rem 2.5rem;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.02)
+  );
+
+  border-radius: 24px;
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.75),
+    inset 0 1px 0 rgba(255,255,255,.08);
+
+  transform: translateY(28px) scale(.96);
+  transition: transform .45s cubic-bezier(.22,1,.36,1);
+}
+
+.panel-modal.active .panel-modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-eyebrow {
+  font-size: .7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  margin: .4rem 0 1.2rem;
+}
+
+.modal-content {
+  font-size: .95rem;
+  line-height: 1.7;
+  opacity: .9;
+}
+
+.modal-content ul {
+  padding-left: 1.2rem;
+  margin-top: .8rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  color: #fff;
+  background: rgba(255,255,255,.1);
 }
 
 /* ==============================
    DEFAULT (RESPONSIVE / TOUCH)
 ============================== */
+.panel-cta .cta-arrow {
+  transition: transform .3s ease;
+}
 
 .panel::before {
   content: '';
@@ -746,6 +861,7 @@ img {
   .btn-gold {
     will-change: transform, box-shadow;
   }
+  
 
   .panel {
     transform-style: preserve-3d;
@@ -764,6 +880,14 @@ img {
     transform:
       translate3d(0, -18px, 18px)
       rotateX(4deg);
+  }
+
+  .panel:hover .panel-cta {
+    color: #fff;
+  }
+
+  .panel:hover .panel-cta .cta-arrow {
+    transform: translateX(4px);
   }
 
   /* Gradient panel hanya saat hover */

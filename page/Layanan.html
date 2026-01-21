@@ -81,11 +81,17 @@
       <p class="section-title">Layanan Hukum</p>
       <h2 class="section-heading">Konsultasi dan Advisory Hukum</h2>
     </div>
-    <div class="service-list">
-      <p>Pemberian legal advice, legal opinion, dan pendampingan hukum 
-        preventif untuk kepentingan litigasi dan non-litigasi secara 
-        tepat, aman, dan sesuai peraturan perundang-undangan</p>
-    </div>
+
+  <div class="service-list">
+    <p>
+      Pemberian legal advice, legal opinion, dan pendampingan hukum 
+      preventif untuk kepentingan litigasi dan non-litigasi secara 
+      tepat, aman, dan sesuai peraturan perundang-undangan
+    </p>
+  </div>
+
+    <a class="news-link" onclick="showModal('konsultasi')">
+      Selengkapnya →</a>
   </div>
 
   <div class="panel panel-b">
@@ -99,6 +105,7 @@
         terdakwa, saksi, dan korban, sejak penyelidikan hingga persidangan, dengan 
         menjunjung asas praduga tak bersalah dan kerahasiaan klien</p>
     </div>
+    <a class="news-link" onclick="showModal('pidana')">
   </div>
 
   <div class="panel panel-a">
@@ -111,6 +118,10 @@
       <p>Pendampingan dan advisory hukum bagi perusahaan dan pelaku usaha 
         untuk memastikan kegiatan bisnis berjalan patuh hukum, aman, dan berkelanjutan</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
   <div class="panel panel-b">
@@ -123,6 +134,10 @@
       <p>Mendukung pengurusan visa, izin kerja, dan izin 
         tinggal bagi tenaga kerja asing dan keluarganya</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
     <div class="panel panel-a">
@@ -135,6 +150,10 @@
       <p>Pendampingan hukum keluarga terkait perkawinan, 
         perceraian, hak asuh anak, dan harta bersama secara profesional dan beretika</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
     <div class="panel panel-b">
@@ -146,6 +165,10 @@
     <div class="service-list">
       <p>Pendampingan hukum ketenagakerjaan untuk memastikan kepatuhan dan hubungan kerja yang adil</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
     <div class="panel panel-a">
@@ -158,6 +181,10 @@
       <p>Penyusunan dan penelaahan kontrak untuk melindungi 
         kepentingan hukum klien dan mencegah sengketa</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
     <div class="panel panel-b">
@@ -170,6 +197,10 @@
       <p>Perwakilan hukum dalam penyelesaian sengketa melalui 
         litigasi dan non-litigasi secara profesional</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
     <div class="panel panel-a">
@@ -181,10 +212,27 @@
     <div class="service-list">
       <p>Opini hukum dan analisis risiko sebagai dasar pengambilan keputusan yang aman dan tepat</p>
     </div>
+    <a href="/layanan/konsultasi-hukum" class="panel-cta">
+      Selengkapnya
+    <span class="cta-arrow">→</span>
+  </a>
   </div>
 
 </section>
+<div class="panel-modal" id="panelModal">
 
+  <div class="panel-modal-backdrop" onclick="closeModal()"></div>
+
+  <div class="panel-modal-card">
+
+    <button class="modal-close" onclick="closeModal()">×</button>
+
+    <p class="modal-eyebrow">Layanan Hukum</p>
+    <h2 class="modal-title"></h2>
+    <div class="modal-content"></div>
+
+  </div>
+</div>
 <!-- ===============================
  FOOTER
 ================================ -->
