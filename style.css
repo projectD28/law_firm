@@ -151,12 +151,12 @@ img {
 ========================================================= */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 120px;
   display: flex;
   align-items: flex-start;
   overflow: hidden;
-  background: url("bg-a.jpeg") center / cover no-repeat;
+  background:  url("ban2.jpg") center / cover no-repeat;
 }
 
 .hero-overlay {
@@ -274,6 +274,7 @@ img {
 .horizontal-sections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: 'Lexend', sans-serif;
   gap: 2.5rem;
   perspective: 1200px;
   padding: clamp(5rem, 10vh, 8rem)
@@ -286,6 +287,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+  font-family: 'Lexend', sans-serif;
   perspective: 1200px;
   padding: clamp(5rem, 10vh, 8rem)
            clamp(1.5rem, 5vw, 6rem);
@@ -295,6 +297,7 @@ img {
 /* ======== PANEL ======== */
 .panel {
   position: relative;
+  font-family: 'Lexend', sans-serif;
   border-radius: 22px;
   padding: 3.5rem 2.5rem;
   transform: none;
@@ -323,6 +326,8 @@ img {
 .panel-cta {
   margin-top: auto;
   align-self: flex-start;
+
+  font-family: 'Lexend', sans-serif;
 
   display: inline-flex;
   align-items: center;
@@ -365,7 +370,7 @@ img {
   position: absolute;
   inset: 0;
 
-  background: rgba(0,0,0,.55);
+  background: black;
   backdrop-filter: blur(4px);
 }
 
@@ -535,8 +540,8 @@ img {
 }
 
 .team-list img {
-  width: 90px;
-  height: 120px;
+  width: 280px;
+  height: 520px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -701,7 +706,7 @@ img {
         rgba(11,14,19,0.75),
         rgba(11,14,19,0.95)
       ),
-      url("bg-a.jpeg") center / cover no-repeat;
+      url("ban2.jpg") center / cover no-repeat;
   }
 
   .hero-wrapper {
@@ -1014,4 +1019,54 @@ img {
   .btn-gold {
     transform: none !important;
   }
+}
+/* Flooting emai and wa */
+.floating-wrapper {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+    transition: bottom .25s ease;
+}
+
+/* saat menyentuh footer */
+.floating-wrapper.stop {
+    position: absolute;
+}
+
+/* whatsapp */
+.floating-wa {
+    width: 45px;
+    height: 45px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+/* email */
+.floating-email {
+    width: 45px;
+    height: 45px;
+    background: #0072c6;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    text-decoration: none;
+}
+
+.floating-email:hover,
+.floating-wa:hover {
+    transform: scale(1.1);
 }

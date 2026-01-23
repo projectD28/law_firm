@@ -1,83 +1,83 @@
-const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-const backdrop = document.getElementById('menuBackdrop');
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileMenu");
+const backdrop = document.getElementById("menuBackdrop");
 const body = document.body;
-const modal = document.getElementById('panelModal');
-  const modalTitle = modal.querySelector('.modal-title');
-  const modalContent = modal.querySelector('.modal-content');
+const modal = document.getElementById("panelModal");
+const modalTitle = modal.querySelector(".modal-title");
+const modalContent = modal.querySelector(".modal-content");
 
-  const modalData = {
-    konsultasi: {
-      title: 'Konsultasi dan Advisory Hukum',
-      content: `
+const modalData = {
+  konsultasi: {
+    title: "Konsultasi & Advisory Hukum",
+    content: `
         Layanan konsultasi hukum meliputi:
         <ul>
-          <li>Legal opinion tertulis</li>
-          <li>Pendampingan preventif</li>
-          <li>Analisis risiko hukum</li>
-          <li>Advisory berkelanjutan</li>
+          <li>Pemberian pendapat hukum (legal advice) atas permasalahan hukum klien</li>
+          <li>Analisis terhadap posisi hukum klien (legal standing & legal position)</li>
+          <li>Penjelasan hak dan kewajiban klien berdasarkan peraturan perUndang-Undangan</li>
+          <li>Konsultasi baik secara lisan maupun tertulis</li>
         </ul>
-      `
-    },
+      `,
+  },
 
-    pidana: {
-      title: 'Hukum Kriminal (Pidana)',
-      content: `
+  pidana: {
+    title: "Hukum Kriminal (Pidana)",
+    content: `
         Pendampingan hukum pidana profesional sejak:
         <ul>
-          <li>Penyelidikan</li>
-          <li>Penyidikan</li>
-          <li>Penuntutan</li>
-          <li>Persidangan</li>
+          <li>Pendampingan hukum sejak tahap penyelidikan dan penyidikan</li>
+          <li>Pembelaan dan representasi di tingkat kepolisian, kejaksaan, dan pengadilan</li>
+          <li>Pendampingan korban dan saksi</li>
+          <li>Tindak pidana umum dan tindak pidana khusus</li>
         </ul>
-      `
-    }
-  };
+      `,
+  },
+};
 
 function showModal(key) {
-    const data = modalData[key];
-    if (!data) return;
+  const data = modalData[key];
+  if (!data) return;
 
-    modalTitle.textContent = data.title;
-    modalContent.innerHTML = data.content;
+  modalTitle.textContent = data.title;
+  modalContent.innerHTML = data.content;
 
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
 
- function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+function closeModal() {
+  modal.classList.remove("active");
+  document.body.style.overflow = "";
+}
 
 function openMenu() {
-  burger.classList.add('active');
-  mobileMenu.classList.add('active');
-  backdrop.classList.add('active');
-  body.classList.add('menu-open');
+  burger.classList.add("active");
+  mobileMenu.classList.add("active");
+  backdrop.classList.add("active");
+  body.classList.add("menu-open");
 }
 
 function closeMenu() {
-  burger.classList.remove('active');
-  mobileMenu.classList.remove('active');
-  backdrop.classList.remove('active');
-  body.classList.remove('menu-open');
+  burger.classList.remove("active");
+  mobileMenu.classList.remove("active");
+  backdrop.classList.remove("active");
+  body.classList.remove("menu-open");
 }
 
-burger.addEventListener('click', () => {
-  const isOpen = burger.classList.contains('active');
+burger.addEventListener("click", () => {
+  const isOpen = burger.classList.contains("active");
   isOpen ? closeMenu() : openMenu();
 });
 
 // klik backdrop → close
-backdrop.addEventListener('click', closeMenu);
+backdrop.addEventListener("click", closeMenu);
 
 // klik menu → close (UX premium)
-document.querySelectorAll('#mobileMenu a').forEach(link => {
-  link.addEventListener('click', closeMenu);
+document.querySelectorAll("#mobileMenu a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
 });
 
 // ESC key → close (desktop & tablet)
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeMenu();
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMenu();
 });
