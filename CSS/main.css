@@ -1,0 +1,150 @@
+/* =========================================================
+   dhisigit-main
+   Main entry stylesheet
+========================================================= */
+
+/* ======================
+   dhisigit-imports
+====================== */
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("pages.css");
+
+/* =========================================================
+   dhisigit-global-reset
+========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* dhisigit-html */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+/* dhisigit-body */
+body {
+  margin: 0;
+  font-family: 'Lexend', system-ui, -apple-system, sans-serif;
+  background-color: #0b0e13;
+  color: hsl(0, 0%, 92%);
+}
+
+/* dhisigit-body-lock */
+body.menu-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* =========================================================
+   dhisigit-media
+========================================================= */
+
+/* dhisigit-image-default */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* dhisigit-anchor-reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================================
+   dhisigit-focus-accessibility
+========================================================= */
+:focus-visible {
+  outline: 1px solid rgba(255,255,255,.5);
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   dhisigit-selection
+========================================================= */
+::selection {
+  background: rgba(233,198,108,.35);
+  color: #111;
+}
+
+/* =========================================================
+   dhisigit-helpers
+========================================================= */
+
+/* dhisigit-text-center */
+.text-center {
+  text-align: center;
+}
+
+/* dhisigit-text-left */
+.text-left {
+  text-align: left;
+}
+
+/* dhisigit-hidden */
+.is-hidden {
+  display: none !important;
+}
+
+/* dhisigit-visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* =========================================================
+   dhisigit-scrollbar
+========================================================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* dhisigit-scrollbar-track */
+::-webkit-scrollbar-track {
+  background: #0b0e13;
+}
+
+/* dhisigit-scrollbar-thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.15);
+  border-radius: 6px;
+}
+
+/* =========================================================
+   dhisigit-safe-area
+========================================================= */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* =========================================================
+   dhisigit-motion-preference
+========================================================= */
+@media (prefers-reduced-motion: reduce) {
+
+  /* dhisigit-disable-motion */
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* =========================================================
+   dhisigit-debug (optional)
+========================================================= */
+/*
+.debug * {
+  outline: 1px solid rgba(255,0,0,.25);
+}
+*/

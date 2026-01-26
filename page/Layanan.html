@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Our Services | Law Firm</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="../style.css">
+  <!-- PRECONNECT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Primary SEO -->
+  <title>Firma Hukum Terpercaya di Indonesia | Pengacara & Konsultan Hukum Profesional</title>
+  <meta name="description" content="Firma hukum terpercaya di Indonesia dengan pengacara berpengalaman di bidang hukum korporasi, litigasi, dan kekayaan intelektual. Konsultasi hukum profesional, strategis, dan andal.">
+  <meta name="keywords" content="firma hukum indonesia, pengacara profesional, konsultan hukum, pengacara korporasi, pengacara litigasi">
+  <meta name="author" content="Law Firm Indonesia">
+
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Language & Local SEO -->
+  <meta name="language" content="id">
+  <meta name="geo.region" content="ID">
+  <meta name="geo.placename" content="Indonesia">
+
+  <!-- Open Graph (Social Preview) -->
+  <meta property="og:title" content="Firma Hukum Terpercaya di Indonesia">
+  <meta property="og:description" content="Pengacara dan konsultan hukum profesional untuk individu dan korporasi. Integritas, keahlian, dan keunggulan layanan hukum.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.lawfirmanda.com">
+  <meta property="og:image" content="https://www.lawfirmanda.com/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Firma Hukum Terpercaya di Indonesia">
+  <meta name="twitter:description" content="Layanan hukum profesional dan strategis oleh pengacara berpengalaman di Indonesia.">
+  <meta name="twitter:image" content="https://www.lawfirmanda.com/og-image.jpg">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lawfirmanda.com">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
 <!-- ===============================
- NAVBAR (REUSE)
+ NAVBAR
 ================================ -->
 <nav class="navbar">
   <div class="navbar-inner">
    <a class="navbar-brand d-flex align-items-center" href="../index.html">
-    <img src="../logo.png" alt="Logo" 
+    <img src="/Assets/logo.png" alt="Lawverse and Partners logo" 
     style="height: 50px; width: auto; margin-right: 0px;"> </a>
-
 
     <div class="navbar-nav">
       <a class="nav-link" href="../index.html">Beranda</a>
-      <a class="nav-link" href="./tentang.html">Tentang</a>
-      <a class="nav-link" href="./layanan.html">Layanan</a>
-      <a class="nav-link" href="../index.html#team">Tim</a>
-      <a class="nav-link" href="../index.html#news">Berita</a>
-      <a class="nav-link" href="../index.html#faq">FAQ</a>
-      <a class="nav-link" href="../index.html#contact">Bahasa</a>
+      <a class="nav-link" href="tentang.html">Tentang</a>
+      <a class="nav-link" href="Layanan.html">Layanan</a>
+      <a class="nav-link" href="tim.html">Tim</a>
+       <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#news" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Berita & Publikasi</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="content.html">BERITA</a>
+                    <a class="dropdown-item" href="content.html">ARTIKEL</a>
+                </div>
+      </div>
+      <a class="nav-link" href="#faq">FAQ</a>
+      <a class="nav-link" href="#contact">Bahasa</a>
     </div>
 
-    <!-- BURGER -->
+<!-- ===============================
+              BURGER
+================================ -->
     <div class="burger" id="burger">
       <span></span>
       <span></span>
@@ -44,17 +84,32 @@
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
+<!-- ===============================
+            BACKDROP
+================================ -->
+<div class="menu-backdrop" id="menuBackdrop"></div>
+
+<!-- ===============================
+            MOBILE MENU
+================================ -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="../index.html">Beranda</a>
-  <a href="../index.html#about">Tentang</a>
-  <a href="layanan.html">Layanan</a>
-  <a href="../index.html#team">Tim</a>
-  <a href="../index.html#news">Berita</a>
-  <a href="../index.html#faq">FAQ</a>
-  <a href="../index.html#contact">Kontak</a>
+  <a href="tentang.html">Tentang</a>
+  <a href="Layanan.html">Layanan</a>
+  <a href="tim.html">Tim</a>
+  <div class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="javascript:void(0)">
+    Berita
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="content.html">Artikel</a>
+    <a class="dropdown-item" href="content.html">News</a>
+  </div>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Bahasa</a>
 </div>
-<div class="menu-backdrop" id="menuBackdrop"></div>
+</div>
+
 <!-- ===============================
  HERO SERVICES
 ================================ -->
@@ -67,8 +122,11 @@
         Layanan hukum yang kami sediakan
       </h1>
       <p class="hero-subtitle">
-        Pemberian nasihat hukum, legal opinion, serta pendampingan 
-        hukum preventif untuk kepentingan non-litigasi.
+        Lawverse & Partners menyediakan layanan hukum komprehensif di
+        bidang litigasi dan non-litigasi bagi individu, perusahaan nasional, dan
+        klien internasional. Dengan tim advokat berpengalaman, kami
+        menghadirkan solusi hukum strategis, profesional, dan berorientasi
+        pada hasil.
       </p>
     </div>
   </div>
@@ -77,166 +135,190 @@
 <!-- ===============================
  SERVICES DETAIL
 ================================ -->
-<section class="horizontal-sections">
+<section class="horizontal-section-layanan">
 
   <div class="panel panel-a">
     <div class="section-header">
       <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Konsultasi dan Advisory Hukum</h2>
+      <h2 class="section-heading">HUKUM PIDANA</h2>
     </div>
+    <div class="service-list">
+      <p>
+      Lawverse & Partners menyediakan jasa pengacara hukum pidana yang profesional bagi tersangka,
+      terdakwa, saksi, maupun korban tindak pidana. Kami memberikan pendampingan sejak tahap penyelidikan, 
+      penyidikan, penuntutan, hingga persidangan dan upaya hukum lanjutan. <br>
+      <br>
+      Sebagai law firm terpercaya, kami mengutamakan perlindungan bagi hak klien, strategi terhadap
+      pembelaan yang terukur, serta penerapan asas praduga tidak bersalah. Layanan kami meliputi
+      tindak pidana umum, tindak pidana khusus, pendampingan pemeriksaan kepolisian, hingga pembelaan di pengadilan.
+      </p>
+    </div>
+    <a class="panel-cta" onclick="showModal('pidana')">
+      Selengkapnya...
+    </a>
+  </div>
+      
 
+  <div class="panel panel-b">
+    <div class="section-header">
+      <p class="section-title">Layanan Hukum</p>
+      <h2 class="section-heading">HUKUM PERUSAHAAN DAN BISNIS</h2>
+    </div>
+    <div class="service-list">
+      <p>
+      Lawverse & Partners menyediakan jasa konsultan hukum perusahaan dan hukum bisnis bagi
+      perusahaan nasional maupun internasional. Kami membantu dalam hal pendirian badan usaha,
+      restrukturisasi perusahaan, tata kelola perusahaan, legal due dilligence, serta pendampingan terhadap
+      merger, akuisisi, dan kerja sama bisnis. <br>
+      <br>
+      Layanan ini bertujuan untuk memastikan kegiatan usaha berjalan sesuai dengan peraturan perundang-undangan, meminimalkan risiko hukum, serta
+      melindungi kepentingan bisnis klien secara berkelanjutan.
+      </p>
+    </div>
+    <a class="panel-cta" onclick="showModal('perusahaan')">
+      Selengkapnya...
+    </a>
+  </div>
+
+  <div class="panel panel-a">
+    <div class="section-header">
+      <p class="section-title">Layanan Hukum</p>
+    <h2 class="section-heading">HUKUM KETENAGAKERJAAN DAN HUKUM INDUSTRIAL</h2>
+  </div>
   <div class="service-list">
     <p>
-      Pemberian legal advice, legal opinion, dan pendampingan hukum 
-      preventif untuk kepentingan litigasi dan non-litigasi secara 
-      tepat, aman, dan sesuai peraturan perundang-undangan
+      Lawverse & Partners melayani konsultasi dan pendampingan hukum ketenagakerjaan bagi
+      perusahaan maupun pekerja. Kami menangani perjanjian kerja, kebijakan Human Resources,
+      pemutusan hubungan kerja (PHK), serta penyelesaian perselisihan hubungan industrial
+      melalui bipartit, mediasi atau tripartit, hingga Pengadilan Hubungan Industrial. <br>
+      <br>
+      Pendekatan kami berfokus pada kepatuhan hukum, perlindungan hak dan kewajiban, serta terciptanya
+      hubungan kerja yang harmonis dan berkeadilan.
     </p>
   </div>
-
-    <a class="news-link" onclick="showModal('konsultasi')">
-      Selengkapnya →</a>
-  </div>
+  <a class="panel-cta" onclick="showModal('ketenagakerjaan')">
+      Selengkapnya...
+    </a>
+</div>
 
   <div class="panel panel-b">
     <div class="section-header">
       <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Hukum Kriminal (Pidana)</h2>
+      <h2 class="section-heading">HUKUM PERCERAIAN DAN KELUARGA</h2>
     </div>
-
     <div class="service-list">
-      <p>Pendampingan dan pembelaan hukum pidana secara profesional bagi tersangka, 
-        terdakwa, saksi, dan korban, sejak penyelidikan hingga persidangan, dengan 
-        menjunjung asas praduga tak bersalah dan kerahasiaan klien</p>
-    </div>
-    <a class="news-link" onclick="showModal('pidana')">
-      Selengkapnya →</a>
+    <p>
+      Lawverse & Partners menyediakan jasa pengacara perceraian dan hukum keluarga. 
+      Kami menangani perkara perceraian, hak asuh anak, pembagian harta bersama 
+      (harta gono-gini), serta penyusunan perjanjian perkawinan dan pasca perkawinan.  <br>
+      <br>
+      Pendampingan kami dilakukan secara profesional, beretika dan berimbang untuk 
+      memastikan kepastian hukum serta perlindungan terhadap hak-hak klien.
+    </p>
   </div>
+    <a class="panel-cta" onclick="showModal('perceraian')">
+      Selengkapnya...
+    </a>
+</div>
 
   <div class="panel panel-a">
     <div class="section-header">
       <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Hukum Perusahaan dan Bisnis</h2>
+      <h2 class="section-heading">HUKUM IMIGRASI DAN INTERNASIONAL</h2>
     </div>
-
     <div class="service-list">
-      <p>Pendampingan dan advisory hukum bagi perusahaan dan pelaku usaha 
-        untuk memastikan kegiatan bisnis berjalan patuh hukum, aman, dan berkelanjutan</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
+    <p>
+      Lawverse & Partners menyediakan hukum imigrasi dan hukum internasional 
+      bagi individu, tenaga kerja asing, serta perusahaan nasional dan
+      multinasional. Kami memberikan pendampingan dalam pengurusan visa, izin 
+      tinggal (ITAS/ITAP), izin kerja tenaga kerja asing, kewarganegaraan, serta
+      kepatuhan keimigrasian sesuai dengan peraturan perundang-undangan dan ketentuan 
+      hukum internasional yang berlaku. <br>
+      <br>
+      Sebagai konsultan hukum imigrasi yang profesional, kami membantu klien untuk memastikan 
+      seluruh aktivitas lintas negara berjalan secara sah, tertib, dan aman secara hukum. 
+      Layanan kami meliputi pendampingan perizinan, konsultasi kepatuhan imigrasi perusahaan, 
+      penyelesaian permasalahan overstay,deportasi, penolakan visa, hingga pendampingan sengketa keimigrasian. 
+    </p>
   </div>
+    <a class="panel-cta" onclick="showModal('imigrasi')">
+      Selengkapnya...
+    </a>
+</div>
 
   <div class="panel panel-b">
     <div class="section-header">
       <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Hukum Imigrasi dan Hukum Internasional</h2>
+      <h2 class="section-heading">PENYUSUNAN DAN REVIEW KONTRAK</h2>
     </div>
-
     <div class="service-list">
-      <p>Mendukung pengurusan visa, izin kerja, dan izin 
-        tinggal bagi tenaga kerja asing dan keluarganya</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
+    <p>Lawverse & Partners menyediakan jasa legal drafting dan review kontrak 
+      untuk kontrak komersial, perjanjian kerja, perjanjian investasi, perjanjian 
+      kerjasama bisnis, serta terms & conditions. Setiap kontrak akan disusun secara 
+      sah, jelas seimbang dan sesuai dengan peraturan perundang-undangan yang berlaku. <br>
+      <br>
+      </p>
   </div>
-
-    <div class="panel panel-a">
-    <div class="section-header">
-      <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Hukum Perkawinan dan Perceraian</h2>
-    </div>
-
-    <div class="service-list">
-      <p>Pendampingan hukum keluarga terkait perkawinan, 
-        perceraian, hak asuh anak, dan harta bersama secara profesional dan beretika</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
-  </div>
-
-    <div class="panel panel-b">
-    <div class="section-header">
-      <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Ketenagakerjaan dan Hubungan Industrial</h2>
-    </div>
-
-    <div class="service-list">
-      <p>Pendampingan hukum ketenagakerjaan untuk memastikan kepatuhan dan hubungan kerja yang adil</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
-  </div>
-
-    <div class="panel panel-a">
-    <div class="section-header">
-      <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Penyusunan dan Review Kontrak</h2>
-    </div>
-
-    <div class="service-list">
-      <p>Penyusunan dan penelaahan kontrak untuk melindungi 
-        kepentingan hukum klien dan mencegah sengketa</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
-  </div>
-
-    <div class="panel panel-b">
-    <div class="section-header">
-      <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Litigasi dan Penyelesaian Sengketa</h2>
-    </div>
-
-    <div class="service-list">
-      <p>Perwakilan hukum dalam penyelesaian sengketa melalui 
-        litigasi dan non-litigasi secara profesional</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
-  </div>
-
-    <div class="panel panel-a">
-    <div class="section-header">
-      <p class="section-title">Layanan Hukum</p>
-      <h2 class="section-heading">Opini Hukum dan Analisis Risiko</h2>
-    </div>
-
-    <div class="service-list">
-      <p>Opini hukum dan analisis risiko sebagai dasar pengambilan keputusan yang aman dan tepat</p>
-    </div>
-    <a href="/layanan/konsultasi-hukum" class="panel-cta">
-      Selengkapnya
-    <span class="cta-arrow">→</span>
-  </a>
-  </div>
-
-</section>
-<div class="panel-modal" id="panelModal">
-
-  <div class="panel-modal-backdrop" onclick="closeModal()"></div>
-
-  <div class="panel-modal-card">
-
-    <button class="modal-close" onclick="closeModal()">×</button>
-
-    <p class="modal-eyebrow">Layanan Hukum</p>
-    <h2 class="modal-title"></h2>
-    <div class="modal-content"></div>
-
-  </div>
+    <a class="panel-cta" onclick="showModal('kontrak')">
+      Selengkapnya...
+    </a>
 </div>
+
+  <div class="panel panel-a">
+    <div class="section-header">
+      <p class="section-title">Layanan Hukum</p>
+      <h2 class="section-heading">LITIGASI DAN PENYELESAIAN SENGKETA</h2>
+    </div>
+    <div class="service-list">
+    <p>Lawverse & Partner memberikan layanan secara litigasi dan penyelesaian 
+      sengketa baik perdata, komersial, dan hubungan industrial. Kami mewakili klien
+      di pengadilan serta menyelesaikan sengketa melalui negosiasi, mediasi, dan 
+      alternatif penyelesaian sengketa lainnya secara efektif. <br>
+      <br>
+      </p>
+  </div>
+    <a class="panel-cta" onclick="showModal('litigasi')">
+      Selengkapnya...
+    </a>
+</div>
+
+  <div class="panel panel-b">
+    <div class="section-header">
+      <p class="section-title">Layanan Hukum</p>
+      <h2 class="section-heading">LEGAL OPINION DAN ANALISIS RISIKO</h2>
+    </div>
+      <div class="service-list">
+    <p>Lawverse & Partners menyediakan jasa legal opinion tertulis, 
+      kajian yuridis, serta pemetaan risiko hukum sebagai dasar pengambilan 
+      keputusan yang aman dan strategis bagi klien.<br>
+      <br>
+      </p>
+  </div>
+    <a class="panel-cta" onclick="showModal('legal')">
+      Selengkapnya...
+    </a>
+</div>
+
+  <div class="panel panel-c panel-full">
+    <div class="section-header">
+      <p class="section-title">Layanan Hukum</p>
+      <h2 class="section-heading">RETAINER SERVICE HUKUM</h2>
+    </div>
+    <div class="service-list">
+    <p>Lawverse & Partners menyediakan layanan retainer lawyer 
+      bagi perusahaan dan individu yang membutuhkan pendampingan 
+      hukum secara berkelanjutan. Layanan ini mencakup konsultasi 
+      rutin, review kontrak, legal compliance, serta pendampingan 
+      strategis dalam kegiatan operasional sehari-hari.<br>
+      <br>
+      </p>
+  </div>
+  <a class="panel-cta" onclick="showModal('retainer')">
+      Selengkapnya...
+    </a>
+</div>
+</section>
+
 <!-- ===============================
  FOOTER
 ================================ -->
@@ -253,7 +335,30 @@
       </div>
     </div>
   </div>
+  <div class="floating-wrapper">
+        <a href="mailto:admin@domain.com" class="floating-email" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://wa.me/+628170142397" class="floating-wa" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 </footer>
+
+<!-- ===============================
+  PANEL MODAL (GLOBAL)
+ ================================ -->
+  <div class="panel-modal" id="panelModal" role="dialog" aria-modal="true">
+    <div class="panel-modal-backdrop" onclick="closeModal()"></div>
+      <div class="panel-modal-card">
+        <button class="modal-close" aria-label="Close modal" onclick="closeModal()">X</button>
+        <div class="modal-eyebrow">Layanan Hukum</div>
+        <h3 class="modal-title"></h3>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+  
 <script src="../menu.js"></script>
 </body>
 </html>

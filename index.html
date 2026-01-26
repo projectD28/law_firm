@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- PRECONNECT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Primary SEO -->
   <title>Firma Hukum Terpercaya di Indonesia | Pengacara & Konsultan Hukum Profesional</title>
@@ -30,9 +35,6 @@
   <meta name="twitter:description" content="Layanan hukum profesional dan strategis oleh pengacara berpengalaman di Indonesia.">
   <meta name="twitter:image" content="https://www.lawfirmanda.com/og-image.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -50,21 +52,30 @@
 ================================ -->
 <nav class="navbar">
   <div class="navbar-inner">
-   <a class="navbar-brand d-flex align-items-center" href="#">
-    <img src="logo.png" alt="Logo" 
+   <a class="navbar-brand d-flex align-items-center" href="../index.html">
+    <img src="/Assets/logo.png" alt="Lawverse and Partners logo" 
     style="height: 50px; width: auto; margin-right: 0px;"> </a>
 
     <div class="navbar-nav">
       <a class="nav-link" href="index.html">Beranda</a>
-      <a class="nav-link" href="./page/tentang.html">Tentang</a>
-      <a class="nav-link" href="./page/layanan.html">Layanan</a>
-      <a class="nav-link" href="#team">Tim</a>
-      <a class="nav-link" href="#news">Berita</a>
+      <a class="nav-link" href="/page/tentang.html">Tentang</a>
+      <a class="nav-link" href="/page/Layanan.html">Layanan</a>
+      <a class="nav-link" href="/page/tim.html">Tim</a>
+       <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#news" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Berita & Publikasi</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/page/content.html">BERITA</a>
+                    <a class="dropdown-item" href="/page/content.html">ARTIKEL</a>
+                </div>
+      </div>
       <a class="nav-link" href="#faq">FAQ</a>
       <a class="nav-link" href="#contact">Bahasa</a>
     </div>
 
-    <!-- BURGER -->
+<!-- ===============================
+              BURGER
+================================ -->
     <div class="burger" id="burger">
       <span></span>
       <span></span>
@@ -73,18 +84,30 @@
   </div>
 </nav>
 
-<!-- BACKDROP -->
+<!-- ===============================
+            BACKDROP
+================================ -->
 <div class="menu-backdrop" id="menuBackdrop"></div>
 
-<!-- MOBILE MENU -->
+<!-- ===============================
+            MOBILE MENU
+================================ -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Beranda</a>
-  <a href="./page/tentang.html">Tentang</a>
-  <a href="./page/layanan.html">Layanan</a>
-  <a href="#team">Tim</a>
-  <a href="#news">Berita</a>
+  <a href="/page/tentang.html">Tentang</a>
+  <a href="/page/Layanan.html">Layanan</a>
+  <a href="/page/tim.html">Tim</a>
+  <div class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="javascript:void(0)">
+    Berita
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/page/content.html">Artikel</a>
+    <a class="dropdown-item" href="/page/content.html">News</a>
+  </div>
   <a href="#faq">FAQ</a>
   <a href="#contact">Bahasa</a>
+</div>
 </div>
 
 <!-- ===============================
@@ -92,79 +115,135 @@
 ================================ -->
 <header class="hero" id="home">
   <div class="hero-overlay"></div>
-
-  <div class="hero-container">
-    <div class="hero-wrapper">
-
-      <h1 class="hero-title">
-        Firma Hukum Terpercaya di Indonesia<br>
-        Menghadirkan Integritas & Keunggulan Dalam Layanan Hukum
-      </h1>
-
-      <h2 class="hero-subtitle">
-        Solusi hukum menyeluruh, modern, dan kolaboratif, dengan cakupan keahlian yang luas serta berorientasi pada keadilan dan profesionalisme.
-      </h2>
-
-      <div class="hero-meta">
-        <div class="hero-badge">
+    <div class="hero-container">
+      <div class="hero-wrapper">
+        <h1 class="hero-title">
+        FIRMA HUKUM TERPERCAYA UNTUK SOLUSI HUKUM PROFESIONAL, STRATEGIS<br>
+        </h1>
+        <h2 class="hero-subtitle">
+        Lawverse & Partners menghadirkan layanan hukum yang komprehensif dalam bidang litigasi dan 
+        non-litigasi baik hukum nasional maupun internasional dengan standar integritas, ketelitian, 
+        dan profesionalisme tinggi dengan tim Advokat berpengalaman.
+        <br><br>
+        Memberikan layanan hukum yang berkualitas tinggi bagi individu, perusahaan, dan klien 
+        internasional dengan pendekatan secara strategis, modern dan berorientasi pada hasil.
+        </h2>
+        <div class="hero-meta">
+          <div class="hero-badge">
           TERPERCAYA • ANDAL • PROFESIONAL
-        </div>
-
-        <div class="hero-actions">
+          </div>
+          <div class="hero-actions">
           <a href="#contact" class="btn-gold">Get Consultation</a>
+          </div>
         </div>
       </div>
-  </div>
+    </div>
 </header>
 
 <section class="horizontal-sections">
-
   <!-- SERVICES -->
-  <div class="panel panel-a">
-    <div class="section-header">
-      <p class="section-title">ALAMAT KANTOR</p>
-      <h2 class="section-heading">Kantor Pusat</h2>
-      <p class="section-heading">Jl. Merdeka Raya Blok A no.41, Kota Depok 16417</p>
+    <div class="panel panel-c panel-full">
+      <div class="section-header">
+        <p class="section-title">LAWVERSE AND PARTNERS</p>
+        <h2 class="section-heading">PROFIL</h2>
+      </div>
+      <div class="service-list">
+        <p>Lawverse & Partners merupakan firma hukum modern yang berbasis di seluruh wilayah
+           Indonesia, yang menyediakan layanan Advokat dan Konsultan Hukum yang berpengalaman,
+           baik individu, pelaku usaha maupun institusi. Pendekatan yang dilakukan oleh Lawverse &
+           Partners melalui pendekatan secara strategis, praktis, dan berorientasi pada solusi. 
+           <br> <br>
+           Kami melayani hukum secara litigasi melalui seluruh cakupan wilayah pengadilan, hukum pidana,
+           hukum korporasi, hukum bisnis, hukum ketenagakerjaan, hukum perceraian, hukum keluarga,
+           hukum imigrasi, hukum internasional, mediasi, negosiasi, penyusunan dan legal review
+           terhadap kontrak, hingga retainer service untuk memastikan kepastian dan perlindungan
+           terhadap hukum klien secara berkelanjutan.</p>
+      </div>
     </div>
-
-    <div class="service-list">
-      <h2 class="section-heading">Kantor Cabang</h2>
-      <p class="section-heading">Jl. Perisai Block F No.1 Perum Cilame Permai, Kab. Bandung Barat 40552</p>
-    </div>
-  </div>
 
   <!-- TEAM -->
-  <div class="panel panel-b">
-    <div class="section-header">
-      <h3>PARTNERS KAMI</h3>
-    </div>
-
-    <div class="team-list">
-      <div>
-        <img style="width: 250px ;height: 200px;" src="sucirahmalia.JPG" alt="Suci Rahmalia">
-        <h3>Suci Rahmalia</h3>
+    <div class="panel panel-a">
+      <div class="section-header">
+        <h2 class="section-heading">BIDANG PRAKTIK</h2>
       </div>
       <div>
-        <img style="width: 250px ;height: 200px;" src="Nurul.jpeg" alt="Nurul Aisyah Fitriani">
-        <h3>Nurul Aisyah Fitriani</h3>
+        <h3>
+          LITIGASI
+          <br>
+          NON LITIGASI
+        </h3>
+      </div>
+    </div>
+  </div>
 
+  <div class="panel panel-b">
+    <div class="section-header">
+      <h2 class="section-heading">YURISDIKSI</h2>
+    </div>
+      <div>
+        <h3>
+          INDONESIA
+          <BR>
+          INTERNASIONAL
+        </h3>
+      </div>
+  </div>
+
+  <div class="panel panel-a">
+    <div class="section-header">
+      <h2 class="section-heading">PENGALAMAN</h2>
+    </div>
+      <div>
+        <h3>
+          +1000 LITIGASI
+          <BR>
+          +1000 NON LITIGASI
+        </h3>
+      </div>
+  </div>
+
+      <div class="panel panel-b">
+      <div class="section-header">
+        <h2 class="section-heading">HUBUNGI KAMI</h2>
+      </div>
+      <div>
+        <h3>
+          +62 817 0142 397
+          <br>
+          info@lawverse.com
+        </h3>
       </div>
     </div>
   </div>
 
   <div class="panel panel-a">
     <div class="section-header">
-      <p class="section-title">Pengalaman</p>
-      <h2 class="section-heading">Managing Partner</h2>
-      <p class="section-heading">Jl. Merdeka Raya Blok A no.41, Kota Depok 16417</p>
+      <h2 class="section-heading">KANTOR KAMI</h2>
     </div>
-
-    <div class="service-list">
-      <h2 class="section-heading">Kantor Cabang</h2>
-      <p class="section-heading">Jl. Perisai Block F No.1 Perum Cilame Permai, Kab. Bandung Barat 40552</p>
-    </div>
+      <div>
+        <h3>
+          Jl. Merdeka Raya Nomor 41, Kota Depok, Jawa Barat
+          <BR>
+          <br>
+          temukan kami di maps
+        </h3>
+      </div>
   </div>
 
+  <div class="panel panel-b">
+    <div class="section-header">
+      <h2 class="section-heading">ARTIKEL TERBARU</h2>
+    </div>
+      <div>
+        <h3>
+          Perbedaan dalam Kontrak
+          <BR>
+          +1000 NON LITIGASI
+          <BR>
+          Perkembangan KUHP Baru di Indonesia
+        </h3>
+      </div>
+  </div>
 </section>
 
 <!-- ===============================
@@ -194,5 +273,18 @@
     </div>
 </footer>
 <script src="menu.js"></script>
+
+<!-- ===============================
+  PANEL MODAL (GLOBAL)
+ ================================ -->
+  <div class="panel-modal" id="panelModal" role="dialog" aria-modal="true">
+    <div class="panel-modal-backdrop" onclick="closeModal()"></div>
+      <div class="panel-modal-card">
+        <button class="modal-close" aria-label="Close modal" onclick="closeModal()">×</button>
+        <div class="modal-eyebrow">Layanan Hukum</div>
+        <h3 class="modal-title"></h3>
+      <div class="modal-content"></div>
+    </div>
+  </div>
 </body>
 </html>
