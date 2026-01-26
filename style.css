@@ -284,11 +284,11 @@ img {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
-  background: url(Assets/ban.jpg) center top / cover no-repeat;
+  background: url(./Assets/ban.jpg) center top / cover no-repeat;
 }
 
 .page-tim .hero {
-  background: url(/Assets/ALL.png) center top / cover no-repeat;
+  background: url(./Assets/ALL.png) center top / cover no-repeat;
   min-height: 130svh;
 }
 
@@ -1060,7 +1060,7 @@ img {
         rgba(11,14,19,0.75),
         rgba(11,14,19,0.95)
       ),
-      url("Assets/ban-mobile.jpg") center / cover no-repeat;
+      url("./Assets/ban-mobile.jpg") center / cover no-repeat;
   }
 
   .hero-wrapper {
